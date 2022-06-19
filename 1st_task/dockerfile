@@ -1,0 +1,5 @@
+FROM python:3.10-slim
+WORKDIR /1nd_task
+COPY / .
+RUN pip install -r requirements.txt
+CMD [ "python", "./test_task_1.py" ]

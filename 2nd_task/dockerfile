@@ -1,0 +1,4 @@
+FROM python:3.10-slim
+WORKDIR /2nd_task
+COPY / .
+CMD [ "python", "./test_task_2.py" ]
