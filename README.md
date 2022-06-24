@@ -18,7 +18,7 @@ docker pull f0rt3hlulz/test_first_task:latest
 - Либо запустить локальный .py файл
 
 ```
-cd /junior && python3 test_task_1.py
+cd /1st_task && python3 test_task_1.py
 ```
 
 ### Задача № 2:
@@ -125,7 +125,7 @@ docker pull f0rt3hlulz/test_second_task:latest
 - Либо запустить локальный .py файл
 
 ```
-cd /junior && python3 test_task_2.py
+cd /2nd_task && python3 test_task_2.py
 ```
 
 ### Задача № 3:
@@ -137,3 +137,37 @@ cd /junior && python3 test_task_2.py
 ```
 docker-compose build && docker-compose up
 ```
+
+### Задача № 4:
+
+1. Написать парсер, получающий список премьер недели
+2. Сформировать json, содержащий данные о фильмах
+name - название фильма
+name_eng - название фильма на английском
+film_link - ссылка на страницу фильма
+film_rating - рейтинг фильма (если есть)
+wait_rating - рейтинг ожидания (если есть)
+votes - количество голосов
+date - дата премьеры
+company - компания, выпускающая фильм
+genres - жанры фильма (массив)
+
+
+- Выполнить pull образа из docker-hub
+
+```
+docker pull f0rt3hlulz/3rd_task_middle:latest
+```
+
+- Либо запустить локальный .py файл
+
+```
+cd /3rd_task_middle && python3 kinopoisk_parser.py
+```
+
+### Задача № 5:
+1. Написать парсер всех фильмов премьер
+2. json аналогичен задаче 1
+    Подсказка: чтобы получить список всех фильм - надо сделать несколько запросов
+    В помощь devtools браузера и вкладка network
+

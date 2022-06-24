@@ -1,0 +1,5 @@
+FROM python:3.10-slim
+WORKDIR /3rd_task_middle
+COPY / .
+RUN pip install -r requirements.txt
+CMD [ "python", "./kinopoisk_parser.py" ]
