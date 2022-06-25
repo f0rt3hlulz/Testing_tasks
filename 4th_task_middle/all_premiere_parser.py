@@ -48,11 +48,11 @@ def make_request(URL):
 
     return json.dumps(json_data, indent=4, ensure_ascii=False)
 
-def write_in_file(data):
-    '''Функция записи ответа в JSON файл'''
-    with open('json_data.json', 'w') as file:
-        file.write(data)
-    file.close
+# def write_in_file(data):
+#     '''Функция записи ответа в JSON файл'''
+#     with open('json_data.json', 'w') as file:
+#         file.write(data)
+#     file.close
 
 
 def main():
@@ -60,8 +60,8 @@ def main():
         raise ConnectionError('Сервис недоступен.')
     try:
         print(make_request(URL))
-        data = make_request(URL)
-        write_in_file(data)
+        # data = make_request(URL)
+        # write_in_file(data)
     except Exception as error:
         print(f'Сбой в работе программы {error}')
 
