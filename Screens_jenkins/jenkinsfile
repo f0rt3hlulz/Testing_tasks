@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Prepare') {
+            steps {
+                echo 'Начало пайплайна'
+            }
+        }
+        stage('Parallel') {
+            parallel {
+                stage('Parallel 1') {
+                    steps { echo 'Parallel work 1' }
+                }
+                stage('Parallel 2') {
+                    steps { echo 'Parallel work 2' }
+                }
+            }
+        }
+        stage('End') {
+            steps {
+                echo 'Конец пайплайна'
+            }
+        }
+    }
+}
