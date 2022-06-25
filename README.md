@@ -197,6 +197,6 @@ cd /4th_task_middle && python3 all_premiere_parser.py
     Сборки в Jenkins
     Jenkinsfile
   
-'''
+```
 Скриншоты и jenkinsfile приложены в папке /Screens_jenkins
-'''
+```
