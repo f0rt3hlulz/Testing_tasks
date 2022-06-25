@@ -182,3 +182,21 @@ docker pull f0rt3hlulz/4th_task_middle:latest
 ```
 cd /4th_task_middle && python3 all_premiere_parser.py
 ```
+
+### Задача № 6:
+1. Поднять у себя на машине Jenkins (лучше в Docker)
+2. Установить плагин для работы с pipeline (по необходимости)
+3. Написать pipeline, который
+    Выводит сообщение “Начало пайплайна” в шаге с названием “Prepare”
+    Запускает параллельно два шага
+        Шаг “Parallel1”, который выводит сообщение “Parallel work 1”
+        Шаг “Parallel2”, который выводит сообщение “Parallel work 2”
+    После выполнения параллельных шагов запускается шаг “End”, который выводит сообщение “End”
+4. Приложить к решению скрины
+    Шаги поднятия Jenkins
+    Сборки в Jenkins
+    Jenkinsfile
+  
+'''
+Скриншоты и jenkinsfile приложены в папке /Screens_jenkins
+'''
