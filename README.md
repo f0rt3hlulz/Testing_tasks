@@ -171,3 +171,14 @@ cd /3rd_task_middle && python3 kinopoisk_parser.py
     Подсказка: чтобы получить список всех фильм - надо сделать несколько запросов
     В помощь devtools браузера и вкладка network
 
+- Выполнить pull образа из docker-hub
+
+```
+docker pull f0rt3hlulz/4th_task_middle:latest
+```
+
+- Либо запустить локальный .py файл
+
+```
+cd /4th_task_middle && python3 all_premiere_parser.py
+```

@@ -1,0 +1,5 @@
+FROM python:3.10-slim
+WORKDIR /4th_task_middle
+COPY / .
+RUN pip install -r requirements.txt
+CMD [ "python", "./all_premiere_parser.py" ]
